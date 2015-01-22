@@ -1,5 +1,6 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
@@ -8,9 +9,9 @@ import java.awt.Graphics;
 
 /**
  *
- * @author WST
+ * @author WEL
  */
-public class FaceBasket extends Applet {
+public class FaceBucket extends Applet {
 
     /**
      * Initialization method that will be called after the applet is loaded into
@@ -20,19 +21,28 @@ public class FaceBasket extends Applet {
     public void init() {
         // TODO start asynchronous download of heavy resources
     }
+    
     @Override
-  public void paint (Graphics g){
-   g.drawLine(100,100,200,300);
-   g.drawLine(500,100,400,300);
-   g.drawLine(200,300,400,300);
-   g.drawLine(100,100,500,100);
-   g.drawArc(245, 220, 100, 50, 180, 180);
-   g.drawLine(270,230,320,230);
-     g.drawLine(270,230,300,200);
-       g.drawLine(300,200,320,230);
-   g.drawOval(WIDTH, WIDTH, WIDTH, WIDTH);
-   
-  }
-    
-    
+    public void paint(Graphics g){
+      g.drawArc(100, 25, 100, 100, 150, 60);
+      g.drawArc(200, 25, 100, 100, 150, 60);
+      g.drawArc(300, 25, 100, 100, 150, 60);
+      g.drawArc(400, 25, 100, 100, 150, 60);
+      g.drawArc(500, 25, 100, 100, 150, 60);
+      g.drawArc(580, 25, 100, 100, 150, 60);
+        
+      g.drawLine(100, 100, 600, 100);
+      g.drawOval(200, 200, 50, 50);
+      g.drawOval(420, 200, 50, 50);
+      g.drawLine(300, 400, 400, 400);
+      g.drawLine(300, 400, 350, 300);
+      g.drawLine(350, 300, 400, 400);
+      g.drawLine(100, 100, 200, 600);
+      g.drawLine(600, 100, 500, 600);
+      g.drawArc(250, 400, 200, 100, 180, 180);
+      g.drawLine(200, 600, 500, 600);
+    }
+
+
+    // TODO overwrite start(), stop() and destroy() methods
 }
